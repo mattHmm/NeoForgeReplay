@@ -29,7 +29,14 @@ class SettingsRegistryBackend {
     private static final Logger LOGGER = LogManager.getLogger();
     private final Map<SettingsRegistry.SettingKey<?>, Object> settings;
 
-    private final Path configFile = getMinecraft().runDirectory.toPath().resolve("config/replaymod.json");
+    private Path configFile;
+
+    private Path configFile() {
+        if (configFile == null) {
+            configFile = getMinecraft().runDirectory.toPath().resolve("config/replaymod.json");
+        }
+        return configFile;
+    }
 
     SettingsRegistryBackend(Map<SettingsRegistry.SettingKey<?>, Object> settings) {
         this.settings = settings;
@@ -40,15 +47,15 @@ class SettingsRegistryBackend {
         try {
             registerWatcher();
         } catch (IOException e) {
-            LOGGER.warn("Failed to setup file watcher for {}, live-reloading is disabled. Cause: {}", configFile, e);
+            LOGGER.warn("Failed to setup file watcher for {}, live-reloading is disabled. Cause: {}", configFile(), e);
         }
     }
 
     private void load(boolean createIfMissingOrBroken) {
         String config;
-        if (Files.exists(configFile)) {
+        if (Files.exists(configFile())) {
             try {
-                config = new String(Files.readAllBytes(configFile), StandardCharsets.UTF_8);
+                config = new String(Files.readAllBytes(configFile()), StandardCharsets.UTF_8);
             } catch (IOException e) {
                 e.printStackTrace();
                 return;
@@ -62,7 +69,7 @@ class SettingsRegistryBackend {
         Gson gson = new Gson();
         JsonObject root = gson.fromJson(config, JsonObject.class);
         if (root == null) {
-            LOGGER.error("Config file {} appears corrupted: {}", configFile, config);
+            LOGGER.error("Config file {} appears corrupted: {}", configFile(), config);
             if (createIfMissingOrBroken) {
                 save();
             }
@@ -100,8 +107,8 @@ class SettingsRegistryBackend {
     }
 
     private void registerWatcher() throws IOException {
-        WatchService watchService = configFile.getFileSystem().newWatchService();
-        configFile.getParent().register(watchService, StandardWatchEventKinds.ENTRY_CREATE, StandardWatchEventKinds.ENTRY_MODIFY);
+        WatchService watchService = configFile().getFileSystem().newWatchService();
+        configFile().getParent().register(watchService, StandardWatchEventKinds.ENTRY_CREATE, StandardWatchEventKinds.ENTRY_MODIFY);
         Thread thread = new Thread(() -> {
             while (true) {
                 WatchKey nextKey;
@@ -116,7 +123,7 @@ class SettingsRegistryBackend {
                         continue;
                     }
                     Path fileName = ((Path) event.context());
-                    if (fileName.equals(configFile.getFileName())) {
+                    if (fileName.equals(configFile().getFileName())) {
                         MinecraftClient.getInstance().send(this::reload);
                     }
                 }
@@ -180,8 +187,8 @@ class SettingsRegistryBackend {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         String config = gson.toJson(root);
         try {
-            ensureDirectoryExists(configFile.getParent());
-            Files.write(configFile, config.getBytes(StandardCharsets.UTF_8));
+            ensureDirectoryExists(configFile().getParent());
+            Files.write(configFile(), config.getBytes(StandardCharsets.UTF_8));
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -58,7 +58,7 @@ public class ReplayMod implements Module, Scheduler {
     public static final int TEXTURE_SIZE = 256;
     public static final Identifier LOGO_FAVICON = identifier("replaymod", "favicon_logo.png");
 
-    private static final MinecraftClient mc = MCVer.getMinecraft();
+    private static MinecraftClient mc() { return MCVer.getMinecraft(); }
 
     private final ReplayModBackend backend;
     private final SchedulerImpl scheduler = new SchedulerImpl();
@@ -246,7 +246,7 @@ public class ReplayMod implements Module, Scheduler {
     }
 
     public MinecraftClient getMinecraft() {
-        return mc;
+        return mc();
     }
 
     public void printInfoToChat(String message, Object... args) {
@@ -258,7 +258,7 @@ public class ReplayMod implements Module, Scheduler {
     }
 
     private void printToChat(boolean warning, String message, Object... args) {
-        if (!mc.isOnThread()) {
+        if (!mc().isOnThread()) {
             runLater(() -> printToChat(warning, message, args));
             return;
         }
@@ -289,7 +289,7 @@ public class ReplayMod implements Module, Scheduler {
             //#endif
             // Send message to chat GUI
             // The ingame GUI is initialized at startup, therefore this is possible before the client is connected
-            mc.inGameHud.getChatHud().addMessage(text);
+            mc().inGameHud.getChatHud().addMessage(text);
         }
     }
 

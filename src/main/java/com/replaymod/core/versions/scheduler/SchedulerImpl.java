@@ -16,11 +16,11 @@ import java.util.concurrent.TimeoutException;
 //#endif
 
 public class SchedulerImpl implements  Scheduler {
-    private static final MinecraftClient mc = MinecraftClient.getInstance();
+    private static MinecraftClient mc() { return MinecraftClient.getInstance(); }
 
     @Override
     public void runSync(Runnable runnable) throws InterruptedException, ExecutionException, TimeoutException {
-        if (mc.isOnThread()) {
+        if (mc().isOnThread()) {
             runnable.run();
         } else {
             executor.submit(() -> {
@@ -35,7 +35,7 @@ public class SchedulerImpl implements  Scheduler {
         runLater(new Runnable() {
             @Override
             public void run() {
-                if (mc.getOverlay() != null) {
+                if (mc().getOverlay() != null) {
                     // delay until after resources have been loaded
                     runLater(this);
                     return;
@@ -109,7 +109,7 @@ public class SchedulerImpl implements  Scheduler {
     }
 
     private void runLater(Runnable runnable, Runnable defer) {
-        if (mc.isOnThread() && inRunLater) {
+        if (mc().isOnThread() && inRunLater) {
             delayedTasks.add(defer);
         } else {
             executor.send(() -> {
@@ -123,7 +123,7 @@ public class SchedulerImpl implements  Scheduler {
                     //#else
                     System.err.println(e.getReport().asString());
                     //#endif
-                    mc.setCrashReport(e.getReport());
+                    mc().setCrashReport(e.getReport());
                 } finally {
                     inRunLater = false;
                 }

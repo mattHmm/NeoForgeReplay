@@ -13,7 +13,11 @@ import java.nio.file.Path;
 import static com.replaymod.core.utils.Utils.ensureDirectoryExists;
 
 public class ReplayFoldersService {
-    private final Path mcDir = MinecraftClient.getInstance().runDirectory.toPath();
+    private Path mcDir;
+    private Path mcDir() {
+        if (mcDir == null) mcDir = MinecraftClient.getInstance().runDirectory.toPath();
+        return mcDir;
+    }
     private final SettingsRegistry settings;
 
     public ReplayFoldersService(SettingsRegistry settings) {
@@ -21,7 +25,7 @@ public class ReplayFoldersService {
     }
 
     public Path getReplayFolder() throws IOException {
-        return ensureDirectoryExists(mcDir.resolve(settings.get(Setting.RECORDING_PATH)));
+        return ensureDirectoryExists(mcDir().resolve(settings.get(Setting.RECORDING_PATH)));
     }
 
     /**
@@ -44,7 +48,7 @@ public class ReplayFoldersService {
      * Distinct from the recording folder cause people kept confusing them with recordings.
      */
     public Path getCacheFolder() throws IOException {
-        Path path = ensureDirectoryExists(mcDir.resolve(settings.get(Setting.CACHE_PATH)));
+        Path path = ensureDirectoryExists(mcDir().resolve(settings.get(Setting.CACHE_PATH)));
         try {
             Files.setAttribute(path, "dos:hidden", true);
         } catch (UnsupportedOperationException ignored) {

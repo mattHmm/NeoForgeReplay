@@ -1,0 +1,41 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "GPL-3.0-or-later"
+issueTrackerURL = "https://github.com/ReplayMod/ReplayMod/issues"
+
+[[mods]]
+    modId           = "replaymod"
+    version         = "${file.jarVersion}"
+    displayName     = "Replay Mod"
+    description     = "Record, replay and share your Minecraft experience."
+    logoFile        = "assets/replaymod/favicon_logo.png"
+
+    [[dependencies.replaymod]]
+        modId         = "neoforge"
+        type          = "required"
+        versionRange  = "[21.11,)"
+        ordering      = "NONE"
+        side          = "CLIENT"
+    [[dependencies.replaymod]]
+        modId         = "minecraft"
+        type          = "required"
+        versionRange  = "[1.21.11,1.22)"
+        ordering      = "NONE"
+        side          = "CLIENT"
+
+[[mixins]]
+    config = "mixins.core.replaymod.json"
+[[mixins]]
+    config = "mixins.recording.replaymod.json"
+[[mixins]]
+    config = "mixins.render.replaymod.json"
+[[mixins]]
+    config = "mixins.replay.replaymod.json"
+[[mixins]]
+    config = "mixins.render.blend.replaymod.json"
+[[mixins]]
+    config = "mixins.extras.playeroverview.replaymod.json"
+[[mixins]]
+    config = "mixins.compat.shaders.replaymod.json"
+[[mixins]]
+    config = "mixins.jgui.json"

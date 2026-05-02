@@ -75,7 +75,7 @@ public class LangResourcePack extends AbstractFileResourcePack {
         try {
             bytes = readFile(String.join("/", segments));
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            return null;
         }
         if (bytes == null) {
             return null;
@@ -90,7 +90,7 @@ public class LangResourcePack extends AbstractFileResourcePack {
 
     private byte[] readFile(String path) throws IOException {
         if ("pack.mcmeta".equals(path)) {
-            return "{\"pack\": {\"description\": \"ReplayMod language files\", \"pack_format\": 4}}".getBytes(StandardCharsets.UTF_8);
+            return "{\"pack\": {\"description\": \"ReplayMod language files\", \"pack_format\": 34}}".getBytes(StandardCharsets.UTF_8);
         }
 
         Path langPath = langPath(path);

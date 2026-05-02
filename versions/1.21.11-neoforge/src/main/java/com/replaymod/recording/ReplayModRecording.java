@@ -13,8 +13,6 @@ import com.replaymod.replay.ReplayHandler;
 import io.netty.channel.Channel;
 import io.netty.util.AttributeKey;
 import net.minecraft.network.ClientConnection;
-import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
-import net.neoforged.neoforge.network.registration.PayloadRegistrar;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -55,16 +53,6 @@ public class ReplayModRecording implements Module {
         connectionEventHandler = new ConnectionEventHandler(LOGGER, core);
 
         new GuiHandler(core).register();
-
-        // Register the restrictions payload so NeoForge does not close the connection when the
-        // server sends it.  We receive it via the low-level Netty pipeline (MixinClientConnection)
-        // rather than this handler, so the handler is intentionally empty.
-        net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener(
-                (RegisterPayloadHandlersEvent event) -> {
-                    PayloadRegistrar registrar = event.registrar("1");
-                    registrar.playToClient(Restrictions.ID, Restrictions.CODEC, (payload, context) -> {});
-                    registrar.configurationToClient(Restrictions.ID, Restrictions.CODEC, (payload, context) -> {});
-                });
     }
 
     public void initiateRecording(ClientConnection networkManager) {

@@ -1,5 +1,6 @@
 package com.replaymod.core;
 
+import com.replaymod.core.utils.Restrictions;
 import com.replaymod.core.versions.LangResourcePack;
 import net.minecraft.SharedConstants;
 import net.minecraft.resource.ResourcePack;
@@ -14,6 +15,8 @@ import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent;
 import net.neoforged.neoforge.event.AddPackFindersEvent;
+import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
+import net.neoforged.neoforge.network.registration.PayloadRegistrar;
 
 import java.util.Optional;
 
@@ -27,6 +30,13 @@ public class ReplayModBackend {
         mod.initModules();
         modEventBus.addListener(this::registerKeyMappings);
         modEventBus.addListener(this::addPackFinders);
+        modEventBus.addListener(this::registerPayloadHandlers);
+    }
+
+    private void registerPayloadHandlers(RegisterPayloadHandlersEvent event) {
+        PayloadRegistrar registrar = event.registrar("1");
+        registrar.playToClient(Restrictions.ID, Restrictions.CODEC, (payload, context) -> {});
+        registrar.configurationToClient(Restrictions.ID, Restrictions.CODEC, (payload, context) -> {});
     }
 
     private void registerKeyMappings(RegisterKeyMappingsEvent event) {

@@ -109,7 +109,8 @@ public class SchedulerImpl implements  Scheduler {
     }
 
     private void runLater(Runnable runnable, Runnable defer) {
-        if (mc().isOnThread() && inRunLater) {
+        MinecraftClient mc = mc();
+        if (mc != null && mc.isOnThread() && inRunLater) {
             delayedTasks.add(defer);
         } else {
             executor.send(() -> {

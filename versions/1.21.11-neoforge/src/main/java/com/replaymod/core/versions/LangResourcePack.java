@@ -41,7 +41,7 @@ public class LangResourcePack extends AbstractFileResourcePack {
     private static final Gson GSON = new Gson();
     public static final String NAME = "replaymod_lang";
     private static final Pattern JSON_FILE_PATTERN = Pattern.compile("^assets/" + ReplayMod.MOD_ID + "/lang/([a-z][a-z])_([a-z][a-z]).json$");
-    private static final Pattern LANG_FILE_NAME_PATTERN = Pattern.compile("^([a-z][a-z])_([a-z][a-z]).lang$");
+    private static final Pattern LANG_FILE_NAME_PATTERN = Pattern.compile("^([a-zA-Z]{2})_([a-zA-Z]{2}).lang$");
 
     public static final String LEGACY_KEY_PREFIX = "replaymod.input.";
     private static final String FABRIC_KEY_FORMAT = "key." + ReplayMod.MOD_ID + ".%s";
@@ -141,7 +141,7 @@ public class LangResourcePack extends AbstractFileResourcePack {
                     .map(Path::getFileName).map(Path::toString)
                     .map(LANG_FILE_NAME_PATTERN::matcher)
                     .filter(Matcher::matches)
-                    .map(matcher -> String.format("%s_%s.json", matcher.group(1), matcher.group(2)))
+                    .map(matcher -> String.format("%s_%s.json", matcher.group(1).toLowerCase(), matcher.group(2).toLowerCase()))
                     .map(name -> identifier(ReplayMod.MOD_ID, "lang/" + name))
                     .forEach(consumer);
         } catch (IOException e) {

@@ -28,6 +28,7 @@ public class ReplayModBackend {
 
     public ReplayModBackend(IEventBus modEventBus) {
         mod.initModules();
+        NeoForgeEventBridge.register();
         modEventBus.addListener(this::registerKeyMappings);
         modEventBus.addListener(this::addPackFinders);
         modEventBus.addListener(this::registerPayloadHandlers);

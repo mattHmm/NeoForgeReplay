@@ -48,7 +48,6 @@ public class ConnectionEventHandler {
 
     private static final String DATE_FORMAT = "yyyy_MM_dd_HH_mm_ss";
     private static final SimpleDateFormat sdf = new SimpleDateFormat(DATE_FORMAT);
-    private static final MinecraftClient mc = getMinecraft();
 
     private final Logger logger;
     private final ReplayMod core;
@@ -69,7 +68,7 @@ public class ConnectionEventHandler {
             if (local) {
                 //#if MC>=10800
                 //#if MC>=11600
-                if (mc.getServer().getWorld(World.OVERWORLD).isDebugWorld()) {
+                if (getMinecraft().getServer().getWorld(World.OVERWORLD).isDebugWorld()) {
                 //#else
                 //#if MC>=11400
                 //$$ if (mc.getServer().getWorld(DimensionType.OVERWORLD).getGeneratorType() == LevelGeneratorType.DEBUG_ALL_BLOCK_STATES) {
@@ -98,7 +97,7 @@ public class ConnectionEventHandler {
             //$$         ? loginNetworkHandler.getServerInfo()
             //$$         : null;
             //#else
-            serverInfo = mc.getCurrentServerEntry();
+            serverInfo = getMinecraft().getCurrentServerEntry();
             //#endif
 
             String worldName;
@@ -106,7 +105,7 @@ public class ConnectionEventHandler {
             boolean autoStart = core.getSettingsRegistry().get(Setting.AUTO_START_RECORDING);
             if (local) {
                 //#if MC>=11600
-                worldName = mc.getServer().getSaveProperties().getLevelName();
+                worldName = getMinecraft().getServer().getSaveProperties().getLevelName();
                 //#else
                 //$$ worldName = mc.getServer().getLevelName();
                 //#endif
@@ -115,7 +114,7 @@ public class ConnectionEventHandler {
             //#if MC>=12002
             //$$ } else if (serverInfo != null && serverInfo.isRealm()) {
             //#else
-            } else if (mc.isConnectedToRealms()) {
+            } else if (getMinecraft().isConnectedToRealms()) {
             //#endif
                 // we can't access the server name without tapping too deep in the Realms Library
                 worldName = "A Realms Server";
@@ -179,7 +178,7 @@ public class ConnectionEventHandler {
             guiControls = new GuiRecordingControls(core, packetListener, autoStart);
             guiControls.register();
 
-            guiOverlay = new GuiRecordingOverlay(mc, core.getSettingsRegistry(), guiControls);
+            guiOverlay = new GuiRecordingOverlay(getMinecraft(), core.getSettingsRegistry(), guiControls);
             guiOverlay.register();
 
             if (autoStart) {

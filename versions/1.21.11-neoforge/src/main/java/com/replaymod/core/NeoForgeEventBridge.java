@@ -2,6 +2,7 @@ package com.replaymod.core;
 
 import de.johni0702.minecraft.gui.versions.callbacks.InitScreenCallback;
 import de.johni0702.minecraft.gui.versions.callbacks.OpenGuiScreenCallback;
+import de.johni0702.minecraft.gui.versions.callbacks.PostRenderScreenCallback;
 import de.johni0702.minecraft.gui.versions.callbacks.PreTickCallback;
 import de.johni0702.minecraft.gui.versions.callbacks.RenderHudCallback;
 import net.minecraft.client.gui.widget.ClickableWidget;
@@ -20,6 +21,7 @@ public class NeoForgeEventBridge {
         NeoForge.EVENT_BUS.addListener(NeoForgeEventBridge::onClientTick);
         NeoForge.EVENT_BUS.addListener(NeoForgeEventBridge::onScreenOpening);
         NeoForge.EVENT_BUS.addListener(NeoForgeEventBridge::onRenderGui);
+        NeoForge.EVENT_BUS.addListener(NeoForgeEventBridge::onScreenRenderPost);
     }
 
     private static void onScreenInitPre(ScreenEvent.Init.Pre event) {
@@ -42,6 +44,12 @@ public class NeoForgeEventBridge {
         RenderHudCallback.EVENT.invoker().renderHud(
                 event.getGuiGraphics(),
                 event.getPartialTick().getTickProgress(true));
+    }
+
+    private static void onScreenRenderPost(ScreenEvent.Render.Post event) {
+        PostRenderScreenCallback.EVENT.invoker().postRenderScreen(
+                event.getGuiGraphics(),
+                event.getPartialTick());
     }
 
     private static class ScreenButtonList extends ArrayList<ClickableWidget> {

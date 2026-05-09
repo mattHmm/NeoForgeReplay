@@ -34,7 +34,7 @@ public class KonamiCode {
                 position = 0;
                 MinecraftClient mc = MinecraftClient.getInstance();
                 if (mc.player != null) {
-                    mc.player.sendMessage(Text.literal("Made by Fishybeing"), false);
+                    mc.player.sendMessage(Text.literal("Made by Fishybeing | " + BuildMeta.read()), false);
                 }
             }
         } else {

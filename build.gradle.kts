@@ -267,7 +267,11 @@ tasks.jar {
         // Exclude Fabric-only mixin launcher config (replaced by neoforge.mods.toml [[mixins]])
         exclude("mixins.nonmmlauncher.replaymod.json")
         manifest {
-            attributes("Implementation-Version" to project.version)
+            attributes(
+                "Implementation-Version" to project.version,
+                "NeoForge-Porter" to "Fishybeing",
+                "Porter-Source" to "https://github.com/mattHmm/NeoForgeReplay"
+            )
         }
     } else if (!platform.isFabric) {
         manifest {

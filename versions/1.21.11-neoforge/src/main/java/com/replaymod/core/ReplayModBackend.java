@@ -35,7 +35,7 @@ public class ReplayModBackend {
     }
 
     private void registerPayloadHandlers(RegisterPayloadHandlersEvent event) {
-        PayloadRegistrar registrar = event.registrar("1");
+        PayloadRegistrar registrar = event.registrar("1").optional();
         registrar.playToClient(Restrictions.ID, Restrictions.CODEC, (payload, context) -> {});
         registrar.configurationToClient(Restrictions.ID, Restrictions.CODEC, (payload, context) -> {});
     }

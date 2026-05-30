@@ -525,7 +525,9 @@ class Patterns {
 
     @Pattern
     private static PositionedSoundInstance master(Identifier sound, float pitch) {
-        //#if MC>=10900
+        //#if MC >= 26.1
+        //$$ return SimpleSoundInstance.forUI(SoundEvent.createVariableRangeEvent(sound), pitch);
+        //#elseif MC>=10900
         return PositionedSoundInstance.master(new SoundEvent(sound), pitch);
         //#elseif MC>=10800
         //$$ return PositionedSoundRecord.create(sound, pitch);
@@ -628,7 +630,6 @@ class Patterns {
         //#endif
     }
 
-    @Pattern
     private static CrashException crashReportToException(MinecraftClient mc) {
         //#if MC >= 26.1
         //$$ return new ReportedException(((com.replaymod.core.mixin.BlockableEventLoopAccessor) mc).getDelayedCrash().get());
@@ -639,7 +640,6 @@ class Patterns {
         //#endif
     }
 
-    @Pattern
     private static boolean haveDelayedCrash(MinecraftClient mc) {
         //#if MC >= 26.1
         //$$ return ((com.replaymod.core.mixin.BlockableEventLoopAccessor) mc).getDelayedCrash() != null;
@@ -763,7 +763,6 @@ class Patterns {
     }
 
     //#if MC>=10900
-    @Pattern
     private static SoundEvent SoundEvent_of(Identifier identifier) {
         //#if MC>=11903
         //$$ return SoundEvent.of(identifier);
@@ -772,7 +771,7 @@ class Patterns {
         //#endif
     }
     //#else
-    //$$ @Pattern private static void SoundEvent_of() {}
+    //$$ private static void SoundEvent_of() {}
     //#endif
 
     //#if MC>=11600

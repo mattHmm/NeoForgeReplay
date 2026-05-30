@@ -59,6 +59,12 @@ public abstract class MixinRenderLivingBase {
             )
     )
     private boolean replayModReplay_shouldInvisibleNotBeRendered(LivingEntity entity, PlayerEntity thePlayer) {
-        return thePlayer instanceof CameraEntity || entity.isInvisibleTo(thePlayer);
+        if (thePlayer instanceof CameraEntity) {
+            // In replay mode, only hide entities that actually have the invisibility flag.
+            // Previously returned `true` unconditionally for CameraEntity which hid all entities
+            // in MC 26.1+ where isInvisibleTo is no longer gated by entity.isInvisible().
+            return entity.isInvisible();
+        }
+        return entity.isInvisibleTo(thePlayer);
     }
 }

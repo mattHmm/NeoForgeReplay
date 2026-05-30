@@ -62,7 +62,11 @@ public class Pipeline<R extends Frame, P extends Frame> implements Runnable {
 
         MinecraftClient mc = MCVer.getMinecraft();
         while (!capturer.isDone() && !abort) {
+            //#if MC >= 26.1
+            //$$ if (GLFW.glfwWindowShouldClose(mc.getWindow().handle()) || ((com.replaymod.core.mixin.BlockableEventLoopAccessor) mc).getDelayedCrash() != null) {
+            //#else
             if (GLFW.glfwWindowShouldClose(mc.getWindow().getHandle()) || ((MinecraftAccessor) mc).getCrashReporter() != null) {
+            //#endif
                 processService.shutdown();
                 return;
             }

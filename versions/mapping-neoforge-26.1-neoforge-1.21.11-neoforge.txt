@@ -1,0 +1,4 @@
+# Mapping from 1.21.11-neoforge to 26.1-neoforge
+# Class renames between MC 1.21.11 Mojmap and MC 26.1 Mojmap
+net.minecraft.resources.ResourceLocation net.minecraft.resources.Identifier
+net.minecraft.client.gui.GuiGraphics net.minecraft.client.gui.GuiGraphicsExtractor

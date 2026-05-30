@@ -9,6 +9,7 @@ issueTrackerURL = "https://github.com/ReplayMod/ReplayMod/issues"
     displayName     = "Replay Mod"
     description     = "Record, replay and share your Minecraft experience."
     logoFile        = "assets/replaymod/favicon_logo.png"
+    displayTest     = "IGNORE_ALL_VERSION"
 
     [[dependencies.replaymod]]
         modId         = "neoforge"

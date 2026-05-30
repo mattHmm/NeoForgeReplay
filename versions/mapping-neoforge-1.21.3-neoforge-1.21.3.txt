@@ -1,0 +1,4 @@
+# Mapping from 1.21.3 (Fabric) to 1.21.3-neoforge (NeoForge)
+# This maps Fabric API class/method names to NeoForge equivalents at the source level.
+# Most replacements are handled via version-specific source overrides in
+# versions/1.21.3-neoforge/src/.

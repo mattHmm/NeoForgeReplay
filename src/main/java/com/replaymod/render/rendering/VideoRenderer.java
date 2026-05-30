@@ -250,9 +250,15 @@ public class VideoRenderer implements RenderInfo {
 
         renderingPipeline.run();
 
+        //#if MC >= 26.1
+        //$$ if (((com.replaymod.core.mixin.BlockableEventLoopAccessor) mc).getDelayedCrash() != null) {
+        //$$     throw new ReportedException(((com.replaymod.core.mixin.BlockableEventLoopAccessor) mc).getDelayedCrash().get());
+        //$$ }
+        //#else
         if (((MinecraftAccessor) mc).getCrashReporter() != null) {
             throw new CrashException(((MinecraftAccessor) mc).getCrashReporter());
         }
+        //#endif
 
         if (settings.isInjectSphericalMetadata()) {
             MetadataInjector.injectMetadata(settings.getRenderMethod(), settings.getOutputFile(),
@@ -534,7 +540,11 @@ public class VideoRenderer implements RenderInfo {
     public boolean drawGui() {
         Window window = mc.getWindow();
         do {
+            //#if MC >= 26.1
+            //$$ if (GLFW.glfwWindowShouldClose(window.handle()) || ((com.replaymod.core.mixin.BlockableEventLoopAccessor) mc).getDelayedCrash() != null) {
+            //#else
             if (GLFW.glfwWindowShouldClose(window.getHandle()) || ((MinecraftAccessor) mc).getCrashReporter() != null) {
+            //#endif
                 return false;
             }
             //#if MC >= 26.1

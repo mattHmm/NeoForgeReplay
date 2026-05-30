@@ -1,6 +1,7 @@
 import com.replaymod.gradle.preprocess.PreprocessTask
 import gg.essential.gradle.util.*
 import net.fabricmc.loom.task.RemapJarTask
+import org.gradle.api.attributes.java.TargetJvmVersion
 
 plugins {
     java
@@ -11,10 +12,18 @@ plugins {
     id("gg.essential.defaults.loom")
 }
 
-// Force Java 21 for all versions (only JDK available on this machine)
-java.toolchain.languageVersion.set(JavaLanguageVersion.of(21))
-
 val mcVersion = platform.mcVersion
+
+// MC 26.1+ requires Java 25; older versions use Java 21
+val javaVersion = if (mcVersion >= 26_01_00) 25 else 21
+java.toolchain.languageVersion.set(JavaLanguageVersion.of(javaVersion))
+if (mcVersion >= 26_01_00) {
+    configurations.matching { it.isCanBeResolved }.all {
+        attributes {
+            attribute(TargetJvmVersion.TARGET_JVM_VERSION_ATTRIBUTE, javaVersion)
+        }
+    }
+}
 
 var jGuiVersion = project.name
 if (jGuiVersion in listOf("1.10.2", "1.11", "1.11.2")) jGuiVersion = "1.9.4"
@@ -258,6 +267,7 @@ preprocess {
     patternAnnotation.set("com.replaymod.gradle.remap.Pattern")
 }
 
+
 tasks.jar {
     archiveClassifier.set("raw")
 
@@ -375,6 +385,9 @@ val bundleJar by tasks.registering(com.github.jengelman.gradle.plugins.shadow.ta
     // causing InvalidModuleDescriptorException on NeoForge's strict module system.
     exclude("META-INF/services/com.fasterxml.*")
     exclude("META-INF/services/sun.*")
+    // jsr305 is already on the NeoForge module path; bundling it causes a split-package
+    // ResolutionException: "Modules jsr305 and replaymod export package javax.annotation.concurrent"
+    exclude("javax/annotation/**")
 
     dependsOn(configureRelocation)
     inputs.file(configureRelocationOutput)

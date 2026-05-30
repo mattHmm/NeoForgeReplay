@@ -1,0 +1,184 @@
+[29May2026 00:56:10.335] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing position keyframe at 0
+[29May2026 00:56:10.352] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 0 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.371] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 1 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.386] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 2 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.387] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 3 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.389] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 4 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.390] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 0 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.391] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 1 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId 42
+[29May2026 00:56:10.391] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 2 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId 42
+[29May2026 00:56:10.392] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 3 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.423] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 4 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.440] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 0 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.441] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 1 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.441] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Setting interpolator of position keyframe at 0 to com.replaymod.replaystudio.pathing.interpolation.LinearInterpolator@687a762c
+[29May2026 00:56:10.445] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Moving keyframe on POSITION from 0 to 2
+[29May2026 00:56:10.450] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Moving keyframe on POSITION from 2 to 0
+[29May2026 00:56:10.453] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 2 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.454] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Moving keyframe on POSITION from 0 to 3
+[29May2026 00:56:10.455] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 0 time 1
+[29May2026 00:56:10.455] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Setting interpolator of position keyframe at 0 to the default
+[29May2026 00:56:10.456] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 0 time 1
+[29May2026 00:56:10.456] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Updating time keyframe at 0 to time 2
+[29May2026 00:56:10.457] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 0 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.457] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 1 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.458] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 2 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.459] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 3 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.460] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing position keyframe at 1
+[29May2026 00:56:10.460] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing position keyframe at 2
+[29May2026 00:56:10.461] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing position keyframe at 0
+[29May2026 00:56:10.461] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing position keyframe at 3
+[29May2026 00:56:10.462] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 0 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.462] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 1 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.462] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 2 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.463] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 3 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.463] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing position keyframe at 3
+[29May2026 00:56:10.464] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing position keyframe at 2
+[29May2026 00:56:10.464] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing position keyframe at 1
+[29May2026 00:56:10.464] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing position keyframe at 0
+[29May2026 00:56:10.465] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 0 time 1
+[29May2026 00:56:10.466] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 2 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.466] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 4 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.467] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 3 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.467] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 0 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.468] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 1 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.469] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 0 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.469] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 1 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.470] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 2 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.471] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 3 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId 42
+[29May2026 00:56:10.471] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 4 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId 42
+[29May2026 00:56:10.472] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 5 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId 42
+[29May2026 00:56:10.473] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 6 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.474] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 7 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.476] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 8 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId 42
+[29May2026 00:56:10.477] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 9 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId 42
+[29May2026 00:56:10.478] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing position keyframe at 4
+[29May2026 00:56:10.479] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing position keyframe at 9
+[29May2026 00:56:10.480] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing position keyframe at 6
+[29May2026 00:56:10.481] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing position keyframe at 7
+[29May2026 00:56:10.482] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing position keyframe at 0
+[29May2026 00:56:10.482] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing position keyframe at 1
+[29May2026 00:56:10.482] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing position keyframe at 3
+[29May2026 00:56:10.483] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing position keyframe at 2
+[29May2026 00:56:10.483] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing position keyframe at 5
+[29May2026 00:56:10.483] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing position keyframe at 8
+[29May2026 00:56:10.484] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 4 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.484] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 3 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.485] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 2 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.485] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 1 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.486] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 0 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.487] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 0 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId 7
+[29May2026 00:56:10.488] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 0 time 1
+[29May2026 00:56:10.488] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Setting interpolator of position keyframe at 0 to com.replaymod.replaystudio.pathing.interpolation.LinearInterpolator@7adbd080
+[29May2026 00:56:10.489] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 0 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.489] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 1 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId 42
+[29May2026 00:56:10.490] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 2 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId 42
+[29May2026 00:56:10.490] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 4 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.491] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 7 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.491] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 8 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.492] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 3 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId 42
+[29May2026 00:56:10.494] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 5 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId 42
+[29May2026 00:56:10.495] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 6 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId 42
+[29May2026 00:56:10.497] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Updating position keyframe at 0 to pos 1.0/2.0/3.0 rot 4.0/5.0/6.0
+[29May2026 00:56:10.498] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 0 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId 7
+[29May2026 00:56:10.499] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Updating position keyframe at 0 to pos 1.0/2.0/3.0 rot 4.0/5.0/6.0
+[29May2026 00:56:10.499] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 0 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.501] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 0 time 1
+[29May2026 00:56:10.501] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 0 time 1
+[29May2026 00:56:10.502] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 0 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.502] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 1 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.504] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 2 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.505] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 3 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.506] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing position keyframe at 0
+[29May2026 00:56:10.506] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing position keyframe at 1
+[29May2026 00:56:10.507] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing position keyframe at 2
+[29May2026 00:56:10.507] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing position keyframe at 3
+[29May2026 00:56:10.508] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing time keyframe at 0
+[29May2026 00:56:10.509] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Updating time keyframe at 0 to time 1
+[29May2026 00:56:10.509] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 0 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.510] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 1 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.510] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 2 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.511] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Setting interpolator of position keyframe at 1 to com.replaymod.replaystudio.pathing.interpolation.LinearInterpolator@158d255c
+[29May2026 00:56:10.511] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 3 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.512] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 4 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.513] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 5 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.515] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Setting interpolator of position keyframe at 3 to com.replaymod.replaystudio.pathing.interpolation.LinearInterpolator@40f33492
+[29May2026 00:56:10.516] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing position keyframe at 2
+[29May2026 00:56:10.516] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing position keyframe at 3
+[29May2026 00:56:10.517] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing position keyframe at 0
+[29May2026 00:56:10.518] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing position keyframe at 1
+[29May2026 00:56:10.518] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing position keyframe at 4
+[29May2026 00:56:10.518] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing position keyframe at 5
+[29May2026 00:56:10.519] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 0 time 1
+[29May2026 00:56:10.519] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 1 time 1
+[29May2026 00:56:10.521] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 2 time 1
+[29May2026 00:56:10.521] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 3 time 1
+[29May2026 00:56:10.521] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing time keyframe at 0
+[29May2026 00:56:10.522] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing time keyframe at 1
+[29May2026 00:56:10.522] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing time keyframe at 2
+[29May2026 00:56:10.522] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing time keyframe at 3
+[29May2026 00:56:10.522] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 0 time 1
+[29May2026 00:56:10.522] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 1 time 1
+[29May2026 00:56:10.523] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 2 time 1
+[29May2026 00:56:10.523] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 3 time 1
+[29May2026 00:56:10.523] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing time keyframe at 1
+[29May2026 00:56:10.524] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing time keyframe at 2
+[29May2026 00:56:10.524] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing time keyframe at 0
+[29May2026 00:56:10.524] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing time keyframe at 3
+[29May2026 00:56:10.525] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 0 time 1
+[29May2026 00:56:10.525] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 1 time 1
+[29May2026 00:56:10.525] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 2 time 1
+[29May2026 00:56:10.526] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 3 time 1
+[29May2026 00:56:10.526] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing time keyframe at 3
+[29May2026 00:56:10.526] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing time keyframe at 2
+[29May2026 00:56:10.528] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing time keyframe at 1
+[29May2026 00:56:10.528] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing time keyframe at 0
+[29May2026 00:56:10.529] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 2 time 1
+[29May2026 00:56:10.529] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 4 time 1
+[29May2026 00:56:10.529] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 3 time 1
+[29May2026 00:56:10.530] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 0 time 1
+[29May2026 00:56:10.530] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 1 time 1
+[29May2026 00:56:10.531] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 0 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.531] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing position keyframe at 0
+[29May2026 00:56:10.531] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 1 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.532] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 3 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.532] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 5 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.533] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 7 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.533] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 9 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId 42
+[29May2026 00:56:10.534] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 11 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId 42
+[29May2026 00:56:10.534] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 13 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId 42
+[29May2026 00:56:10.535] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 15 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.535] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 17 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.536] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 19 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.539] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Setting interpolator of position keyframe at 3 to com.replaymod.replaystudio.pathing.interpolation.LinearInterpolator@200606de
+[29May2026 00:56:10.541] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Setting interpolator of position keyframe at 5 to com.replaymod.replaystudio.pathing.interpolation.LinearInterpolator@24f43aa3
+[29May2026 00:56:10.542] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Moving keyframe on POSITION from 5 to 0
+[29May2026 00:56:10.543] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Moving keyframe on POSITION from 0 to 5
+[29May2026 00:56:10.545] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Moving keyframe on POSITION from 3 to 12
+[29May2026 00:56:10.546] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Moving keyframe on POSITION from 12 to 3
+[29May2026 00:56:10.547] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Moving keyframe on POSITION from 7 to 14
+[29May2026 00:56:10.549] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Moving keyframe on POSITION from 14 to 20
+[29May2026 00:56:10.551] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 4 time 1
+[29May2026 00:56:10.551] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 3 time 1
+[29May2026 00:56:10.551] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 2 time 1
+[29May2026 00:56:10.551] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 1 time 1
+[29May2026 00:56:10.552] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 0 time 1
+[29May2026 00:56:10.552] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 0 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.553] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Updating position keyframe at 0 to pos 7.0/8.0/9.0 rot 10.0/11.0/12.0
+[29May2026 00:56:10.554] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 0 time 0
+[29May2026 00:56:10.554] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 9 time 9
+[29May2026 00:56:10.554] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 4 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId 1
+[29May2026 00:56:10.555] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 6 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId 42
+[29May2026 00:56:10.556] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 8 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId 42
+[29May2026 00:56:10.556] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 10 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId 42
+[29May2026 00:56:10.557] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 0 time 1
+[29May2026 00:56:10.557] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Removing time keyframe at 0
+[29May2026 00:56:10.558] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 0 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.558] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 0 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.559] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 0 time 1
+[29May2026 00:56:10.559] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 1 time 1
+[29May2026 00:56:10.560] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 2 time 1
+[29May2026 00:56:10.560] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 3 time 1
+[29May2026 00:56:10.560] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding time keyframe at 4 time 1
+[29May2026 00:56:10.561] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 0 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1
+[29May2026 00:56:10.561] [Test worker/DEBUG] [com.replaymod.simplepathing.SPTimelineTest/]: Adding position keyframe at 1 pos 1.0/2.0/3.0 rot 4.0/5.0/6.0 entId -1

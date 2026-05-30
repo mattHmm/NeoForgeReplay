@@ -1,0 +1,23 @@
+{
+  "required": true,
+  "package": "com.replaymod.core.mixin",
+  "mixins": [],
+  "server": [],
+  "client": [
+    "Mixin_ContextualKeyBindings",
+    "AbstractButtonWidgetAccessor",
+    "Mixin_PostRenderWorldCalback",
+    "Mixin_PreRenderHandCallback",
+    "MixinMouse",
+    "MixinKeyboardListener",
+    "MixinMinecraft",
+    "GuiScreenAccessor",
+    "KeyBindingAccessor",
+    "MinecraftAccessor",
+    "SimpleOptionAccessor",
+    "TimerAccessor"
+  ],
+  "compatibilityLevel": "JAVA_8",
+  "minVersion": "0.6.11",
+  "refmap": "mixins.replaymod.refmap.json"
+}

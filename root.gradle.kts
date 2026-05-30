@@ -29,8 +29,8 @@ if (releaseCommit == currentCommit) {
     version = "$latestVersion-$diff-g${currentCommit.substring(0, 7)}"
 }
 val dirty = providers.exec {
-    commandLine("git", "describe", "--always", "--dirty=*")
-}.standardOutput.asText.map { it.trim().endsWith("*") }.get()
+    commandLine("git", "status", "--porcelain", "--ignore-submodules=all")
+}.standardOutput.asText.map { it.isNotBlank() }.get()
 if (dirty) {
     version = "$version-dirty"
 }

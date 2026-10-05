@@ -4,6 +4,7 @@
   "mixins": [],
   "server": [],
   "client": [
+    "ChunkRenderingDataPreparerAccessor",
     "Mixin_ChromaKeyColorSky",
     "Mixin_ChromaKeyDisableFog",
     "Mixin_ChromaKeyForceSky",
